@@ -1,0 +1,26 @@
+{
+  "name": "@tsamaya/algolia-autocomplete-plugin",
+  "version": "0.0.0",
+  "private": true,
+  "repository": "git@github.com:tsamaya/algolia-autocomplete-plugin.git",
+  "author": "Arnaud Ferrand <arferrand@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build --no-private",
+    "playground:start": "yarn workspace @tsamaya/plugin-react-example start",
+    "start": "yarn run watch",
+    "test": "lerna run test --no-private",
+    "watch": "lerna run watch --parallel"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}
