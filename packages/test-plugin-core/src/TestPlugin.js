@@ -1,5 +1,5 @@
 const gitHubReposPlugin = {
-  getSources() {
+  getSources({ query }) {
     return [
       {
         sourceId: 'githubPlugin',
@@ -8,10 +8,9 @@ const gitHubReposPlugin = {
             { name: 'algolia/autocomplete', stars: 1237 },
             { name: 'algolia/algoliasearch-client-javascript', stars: 884 },
             { name: 'algolia/algoliasearch-client-php', stars: 554 },
-          ];
-          // .filter(({ label }) =>
-          //   label?.toLowerCase().includes(query.toLowerCase())
-          // );
+          ].filter(({ name }) =>
+            name.toLowerCase().includes(query.toLowerCase())
+          );
         },
         getItemUrl({ item }) {
           return `https://github.com/${item.name}`;
