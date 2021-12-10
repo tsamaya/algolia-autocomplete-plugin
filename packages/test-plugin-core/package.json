@@ -18,8 +18,6 @@
   "bugs": {
     "url": "https://github.com/OpenCageData/geosearch-sdk/issues"
   },
-  "dependencies": {},
-  "devDependencies": {},
   "peerDependencies": {
     "@algolia/autocomplete-js": "^1.5.0",
     "@algolia/autocomplete-theme-classic": "^1.5.0"
