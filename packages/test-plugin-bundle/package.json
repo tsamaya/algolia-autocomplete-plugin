@@ -1,5 +1,5 @@
 {
-  "name": "test-plugin-core",
+  "name": "test-plugin-bundle",
   "version": "0.0.0",
   "description": "Test plugin Core",
   "repository": "git@github.com:tsamaya/algolia-autocomplete-plugin.git",
@@ -11,15 +11,19 @@
     "dist/"
   ],
   "scripts": {
-    "build": "webpack --mode production",
     "build:clean": "rm -rf dist",
+    "build:js": "webpack --mode production",
+    "build:css": "./scripts/copycss.sh",
+    "build": "yarn build:js && yarn build:css",
     "watch": "webpack watch --mode development"
   },
   "bugs": {
     "url": "https://github.com/tsamaya/algolia-autocomplete-plugin/issues"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@algolia/autocomplete-js": "^1.5.0",
-    "@algolia/autocomplete-theme-classic": "^1.5.0"
-  }
+    "@algolia/autocomplete-theme-classic": "^1.5.0",
+    "test-plugin-core": "^0.0.0"
+  },
+  "devDependencies": {}
 }

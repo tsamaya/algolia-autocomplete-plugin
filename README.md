@@ -1,1 +1,1 @@
-# alpolia-autocomplete-plugin TEST
+# algolia-autocomplete-plugin TEST
