@@ -1,6 +1,6 @@
 {
   "name": "test-plugin-core",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Test plugin Core",
   "repository": "git@github.com:tsamaya/algolia-autocomplete-plugin.git",
   "author": "Arnaud Ferrand <arferrand@gmail.com>",
