@@ -6,7 +6,9 @@
   "author": "Arnaud Ferrand <arferrand@gmail.com>",
   "license": "MIT",
   "source": "src/index.js",
-  "main": "dist/js/test-core.js",
+  "main": "dist/js/test-bundle.js",
+  "unpkg": "dist/js/test-bundle.js",
+  "jsdelivr": "dist/js/test-bundle.js",
   "files": [
     "dist/"
   ],
