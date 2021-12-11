@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import { Autocomplete } from './Autocomplete';
 import { TestPlugin } from 'test-plugin-core';
-import '@algolia/autocomplete-theme-classic';
+
 import './App.css';
 
 function App() {
